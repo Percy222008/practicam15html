@@ -7,19 +7,21 @@ body {
 
 /* Contenedor principal */
 .contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+
     max-width: 900px;
     margin: auto;
     background-color: white;
     padding: 30px;
     border-radius: 10px;
+    box-shadow: 0 2px 8px gray;
 }
 
 /* Parte del texto */
 .texto {
-    width: 60%;
+    padding: 10px;
 }
 
 h1 {
@@ -43,10 +45,15 @@ li {
     color: #333;
 }
 
+li:hover {
+    color: #0066cc;
+}
+
 /* Imagen */
 .imagen {
-    width: 30%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagen img {
